@@ -5,12 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>B-Board</title>
+
+    <style>
+      body {
+        background-color: rgb(255, 174, 0);
+      }
+      h1 {
+        color: rgb(136, 0, 0);
+        text-align: center;
+      }
+
+      .stylish {
+        text-align: center;
+        padding-top: 5px;
+        border-radius: 10px;
+        border: 1px solid;
+        height: 50px;
+        width: 50px;
+        background-color: whitesmoke;
+        display: inline-block;
+        margin: 5px;
+      }
+
+      .activeColor {
+        transform: scale(1.2);
+        transition: 0.4s ease-in-out;
+        background-color: rgb(255, 238, 0);
+        color: rgb(29, 27, 27);
+      }
+
+      #boardId {
+        width: 70%;
+        margin: auto;
+      }
+      #buttonsId {
+        color: brown;
+        font-weight: 700;
+        border-radius: 50px;
+      }
+    </style>
   </head>
   <body>
     <h1>ooo=Bingo-Board=ooo</h1>
-    <div id="board"></div>
+    <div id="boardId"></div>
 
-    <div id="buttonsId">Click here</div>
+    <button id="buttonsId">Click here</button>
   </body>
 
   <script src="javascript.js"></script>
